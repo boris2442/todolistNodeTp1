@@ -28,9 +28,9 @@
                         <%= todo.title %>
                     </td>
                     <td>
-                        <button class="btn">
+                        <a href="/editer/:id/<%= todo._id %>" class="btn">
                            Editer <i class="fa-solid fa-pencil"></i>
-                        </button>
+                        </a>
                     </td>
                     <td>
                         <form method="POST" action="/supprimer/<%= todo._id %>?_method=DELETE" >
