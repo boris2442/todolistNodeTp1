@@ -17,6 +17,7 @@ body{
         table {
             width: 100%;
             border-collapse: collapse;
+            border: 2px solid blue;
         }
         th, td {
             border: 1px solid black;
@@ -61,4 +62,13 @@ body{
             background-color: blue;
             color:#f1f1f1;
             cursor: pointer;
+        }
+
+        .btn{
+            background-color: blue;
+            color:#f1f1f1;
+            cursor: pointer;
+            padding:5px 7px;
+            border: none;
+            border-radius: 7px;
         }
