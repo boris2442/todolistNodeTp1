@@ -1,5 +1,5 @@
 // const express = require('express');
-
+const Todo=require('../models/Todo')
 const getIndex=(req, res)=>{
 
         res.render('index');
@@ -8,7 +8,11 @@ const getIndex=(req, res)=>{
 
 const postIndex=(req, res)=>{
     
-        console.log(req.body.title);
+        // console.log(req.body.title);
+        const newTodo=new Todo(({
+            title:req.body.title,
+            completed:false
+        }))
         res.redirect('/');
         // res.send("formulaire soumis avec success")
 
