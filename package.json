@@ -12,9 +12,13 @@
   "description": "",
   "dependencies": {
     "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
     "mongoose": "^8.12.1",
     "nodemon": "^3.1.9",
     "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "html2pug": "^0.0.0"
   }
 }
