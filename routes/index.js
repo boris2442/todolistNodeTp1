@@ -2,11 +2,9 @@ const express=require('express');
 
 const router=express.Router();
 
-router.get('/', (req, res)=>{
-    res.render('index');
-})
-router.post('/ajouter', (req, res)=>{
-    
-})
+const indexController=require('../controllers/controller')
+
+router.get('/', indexController.getIndex)
+router.post('/submit',indexController.postIndex )
 
 module.exports=router;
