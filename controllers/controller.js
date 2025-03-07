@@ -108,6 +108,8 @@ const deleteIndex=(req, res)=>{
             res.status(500).send("Erreur du serveur");
         });
 
+  
+
 }
 
 module.exports = {

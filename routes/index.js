@@ -6,5 +6,5 @@ const indexController=require('../controllers/controller')
 
 router.get('/', indexController.getIndex);
 router.post('/submit',indexController.postIndex );
-router.delete('/supprimer', indexController.deleteIndex )
+router.delete('/supprimer/:id', indexController.deleteIndex )
 module.exports=router;
