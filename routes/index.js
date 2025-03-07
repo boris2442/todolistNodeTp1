@@ -5,6 +5,8 @@ const router=express.Router();
 router.get('/', (req, res)=>{
     res.render('index');
 })
-
+router.post('/ajouter', (req, res)=>{
+    
+})
 
 module.exports=router;
