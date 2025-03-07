@@ -97,7 +97,21 @@ const postIndex = async (req, res) => {
   }
 };
 
+const deleteIndex=(req, res)=>{
+    Todo.findByIdAndDelete(req.params.id)
+       .then(() => {
+            console.log("todo deleted");
+            res.redirect("/");
+        })
+       .catch(err => {
+            console.log(err);
+            res.status(500).send("Erreur du serveur");
+        });
+
+}
+
 module.exports = {
   getIndex: getIndex,
   postIndex: postIndex,
+  deleteIndex: deleteIndex,
 };

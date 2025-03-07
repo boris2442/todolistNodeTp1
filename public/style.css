@@ -48,17 +48,17 @@ body{
             text-align: center;
       
         }
-        form{
+        .form_one{
             display: flex;
             gap:10px;
             flex-direction: column;
         }
-        form input{
+        .form_one input{
             padding: 7px;
             border-radius: 7px;
             
         }
-        form input[type='submit']{
+        .form_one input[type='submit']{
             background-color: blue;
             color:#f1f1f1;
             cursor: pointer;
