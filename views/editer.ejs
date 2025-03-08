@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éditer une tâche</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3 class="">Éditer une tâche</h3>
+            <form action="/editer/<%= todo._id %>" method="POST">
+                <input type="text" name="title" value="<%= todo.title %>">
+                <input type="checkbox" name="completed" <%= todo.completed ? 'checked' : '' %>> Complété
+                <input type="submit" value="Mettre à jour">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

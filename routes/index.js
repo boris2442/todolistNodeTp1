@@ -9,5 +9,6 @@ router.get('/', indexController.getIndex);
 router.post('/submit',indexController.postIndex );
 router.delete('/supprimer/:id', indexController.deleteIndex );
 
-router.get('/editer/:id', EditController.getEdit)
+router.get('/editer/:id', editController.getEdit);
+router.post('/editer/:id', editController.postEdit);
 module.exports=router;
