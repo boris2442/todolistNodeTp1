@@ -29,20 +29,20 @@
                     </td>
                     <td>
                         <a href="/editer/:id/<%= todo._id %>" class="btn">
-                           Editer <i class="fa-solid fa-pencil"></i>
+                            Editer <i class="fa-solid fa-pencil"></i>
                         </a>
                     </td>
                     <td>
-                        <form method="POST" action="/supprimer/<%= todo._id %>?_method=DELETE" >
-                        <button type="submit" class="btn">
-                             Delete
-                            
-                        </button>
-                    </form>
+                        <form method="POST" action="/supprimer/<%= todo._id %>?_method=DELETE">
+                            <button type="submit" class="btn">
+                                Delete
+
+                            </button>
+                        </form>
                     </td>
                 </tr>
                 <% }) %>
-                   
+
         </tbody>
     </table>
 </div>

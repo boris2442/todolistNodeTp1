@@ -68,10 +68,14 @@ body{
         }
 
         .btn{
-            background-color: blue;
+            background-color: rgb(23, 23, 219);
             color:#f1f1f1;
             cursor: pointer;
             padding:5px 7px;
             border: none;
             border-radius: 7px;
+        }
+
+        footer p{
+            text-align: center;
         }
