@@ -11,7 +11,8 @@ app.use(methodOverride('_method'));
 
 
 
-const port = 3004;
+// const port = 3004;
+const PORT = process.env.PORT || 3000;
 
 const router = require('./routes/index');
 
