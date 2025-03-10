@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
- ;
+ 
     text-decoration: none;
     scroll-behavior: smooth;
 }
@@ -59,11 +59,12 @@ body{
             
         }
         .form_one input[type='submit']{
-            background-color: blue;
+            background-color: rgb(0, 98, 255);
             color:#f1f1f1;
             cursor: pointer;
             border: none;
             padding: 10px;
+            font-style: 30px;
         }
 
         .btn{
