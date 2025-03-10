@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <div class="box">
-            <h3 class="">Éditer une tâche</h3>
-            <form action="/editer/<%= todo._id %>" method="POST">
+            <h3 class="">Éditer une tâche </h3>
+            <form method="POST" action="/editer/<%= todo._id %>?_method=PUT" >
                 <input type="text" name="title" value="<%= todo.title %>">
                 <input type="checkbox" name="completed" <%= todo.completed ? 'checked' : '' %>> Complété
                 <input type="submit" value="Mettre à jour">
@@ -19,3 +19,4 @@
     </div>
 </body>
 </html>
+
