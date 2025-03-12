@@ -10,7 +10,7 @@ router.post('/submit',indexController.postIndex );
 router.delete('/supprimer/:id', indexController.deleteIndex );
 
 router.get('/editer/:id', editController.getEdit);
-// router.post('/editer/:id', editController.postEdit);
+
 
 router.put('/editer/:id', editController.putEdit);
 module.exports=router;   
